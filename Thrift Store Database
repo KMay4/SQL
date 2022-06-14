@@ -1,0 +1,30 @@
+--- create grocery store database
+
+CREATE TABLE store (id integer primary key, name text, price integer, itemssold integer, aisle integer);
+
+insert into store values (1, "t-shirts", 23.99, 46, 3);
+insert into store values (2, "shorts", 27.99, 38, 5);
+insert into store values (3, "socks", 9.99, 24, 2);
+insert into store values (4, "key chains", 6.99, 17, 1);
+insert into store values (5, "wallets", 11.99, 3, 4);
+insert into store values (6, "wigs", 232.46, 6, 12);
+insert into store values (7, "cups", 8.99, 3, 9);
+insert into store values (8, "books", 14.72, 9, 6);
+insert into store values (9, "chairs", 12.43, 10, 8);
+insert into store values (10, "headphones", 56.67, 2, 13);
+insert into store values (11, "candles", 11.43, 28, 19);
+insert into store values (12, "air fresheners", 5.00, 32, 10);
+insert into store values (13, "chap stick", .99, 13, 1);
+insert into store values (14, "pillows", 12.72, 1, 14);
+insert into store values (15, "light bulbs", 3.99, 16, 3);
+
+
+--display the database ordered by price. 
+SELECT * FROM store
+ORDER BY price desc; 
+
+SELECT id, name, itemssold from store order by id;
+
+-- what is the sum of the itemssold from the store?
+SELECT sum(itemssold) from store;
+
