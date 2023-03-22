@@ -23,7 +23,6 @@ insert into store values (15, "light bulbs", 3.99, 16, 3);
 SELECT * FROM store
 ORDER BY price desc; 
 
-SELECT id, name, itemssold from store order by id;
 
 -- what is the sum of the itemssold from the store?
 SELECT sum(itemssold) from store;
